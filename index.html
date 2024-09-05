@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libry Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+   
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container" id="main">
+
+        <!-- Sign In Form -->
+        <div class="Login">
+            <form action="home.html" onsubmit="return validate()">
+                <h1>Log in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>or use your account</p>
+                <input type="text" id="userName" name="username" placeholder="Enter your username">
+                <small id="usernamealert"></small>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <small id="passwordalert"></small>
+                <a href="#">Forgot your Password?</a>
+                <button type="submit" id="signInButton">Log In</button>
+            </form>
+        </div>
+
+
+        <script src="javaScript.js"></script>
+</body>
+
+</html>
