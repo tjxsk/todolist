@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Main Container -->
+    <div class="container" id="main">
+        
+        <!-- Sign In Form -->
+        <div class="sign-in">
+            <form onsubmit="return validate()">
+                <h1>Log in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>Sign up to add your list</p>
+                <input type="text" name="text" placeholder="Username" id="userName">
+                <small id="usernamealert"></small>
+                <input type="password" name="password" placeholder="Password" id="password">
+                <small id="passwordalert"></small>
+                <a href="#">Forgot your Password?</a>
+                <button type="submit" id="signInButton">Log in</button>
+            </form>
+        </div>
+    </div>
+<script src="login.js"></script>
+
+</body>
+</html>
